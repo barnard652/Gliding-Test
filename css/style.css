@@ -1,0 +1,86 @@
+body {
+  font-size: 18px;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  width: 90%;
+  padding: 4%;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+.question {
+  width: 90%;
+  padding: 1% 5%;
+  border: 2px solid #eee;
+  color: #707070;
+  margin-bottom: 1em;
+  display: inline-block;
+  line-height: 1.4em;
+}
+.Title {
+  width: 90%;
+  padding: 1% 5%;
+  border: 2px solid #eee;
+  color: #707070;
+  margin-bottom: 1em;
+  display: inline-block;
+  line-height: 1.4em;
+}
+label {
+	display: inline-block;
+	width: 100%;
+	line-height: 2em
+}
+#submit {
+	width:90%;
+	background: #707070;
+	padding: 5%;
+	color: #fff;
+	line-height: 2em;
+	position: sticky;
+	top: 5%;
+}
+.quiz-msg {
+  padding: 0.5em;
+  margin-top: 1em;
+}
+.quiz-msg.correct {
+  background: #e8ffc6;
+}
+.quiz-msg.incorrect {
+  background: #ffe5cc;
+}
+
+.correct {
+  background: green;
+  padding: 0.2em;
+}
+
+
+
+
+/* - \/ Tool Tips pop up \/ - */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  opacity: .9;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
