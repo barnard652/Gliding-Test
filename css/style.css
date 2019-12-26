@@ -1,9 +1,14 @@
 body {
+  width: 100%;
+  margin:0px;
+  display:inline-block;
+}
+#wrapper {
   font-size: 18px;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
   width: 90%;
   padding: 4%;
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
   column-count: 3;
 }
