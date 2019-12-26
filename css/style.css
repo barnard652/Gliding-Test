@@ -3,12 +3,27 @@ body {
   margin:0px;
   height:1000em;
 }
+nav {
+  display: inline-block;
+  width: 20%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background: #707070;
+  color: #FFFFFF;
+}
+ul {
+			
+}
 section {
   display:block;
   font-size: 18px;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-  width: 90%;
-  padding: 5%;
+  width: 70%;
+  padding: 2.5%;
+  float: right;
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
   column-count: 3;
