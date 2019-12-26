@@ -1,9 +1,8 @@
 body {
   width: 100%;
   margin:0px;
-  display:inline-block;
 }
-#wrapper {
+.wrapper {
   font-size: 18px;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
   width: 90%;
