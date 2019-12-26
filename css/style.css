@@ -25,7 +25,8 @@ section {
   width: 90%;
   padding: 1% 5%;
   border: 2px solid #eee;
-  color: #707070;
+  color: #FFFFFF;
+  background: #707070;
   margin-bottom: 1em;
   display: inline-block;
   line-height: 1.4em;
