@@ -10,7 +10,7 @@ nav {
   position: fixed;
   top: 0px;
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   background: #EEEEEE;
   color: #707070;
 }
@@ -134,15 +134,22 @@ button {
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+	visibility: visible;
 }
 		
 		
 		
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width : 960px ){
 	section {
 		-webkit-column-count: 2; /* Chrome, Safari, Opera */
 		-moz-column-count: 2; /* Firefox */
 		column-count: 2;
+	}
+}
+@media only screen and (max-width : 650px ){
+	section {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
 	}
 }
