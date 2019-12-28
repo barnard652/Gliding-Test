@@ -6,8 +6,11 @@
   <title>BGC Pilot Quiz</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+  <script src="Tab-controller.js"></script>
+		
 </head>
 <body>
+
 	<nav>
 		<header>Buckminster Pilot Test</header>
 		<ul id="mainNav">
@@ -21,13 +24,6 @@
 			<li><a href="#part8">Meteorology 2<br/>micro weather systems</a></li>
 			<li><a href="#part9">Human performance and limitations</a></li>
 		</ul>
-		<div class="submit"><button class="quiz-submit">Submit</button>
-			<div>
- 				Your Score is <span id="score" style="font-weight:600;">0</span>
-			</div>
-  			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  			<script  src="js/index.js"></script>
-		</div>
 	</nav>
 	<section class="text-section">
 		<h1>Basic Brozen Test</h1>
@@ -35,11 +31,13 @@
 	</section>
 	
 	
-	
-
-	
-	
-	
+	<div id="submit"><button>Submit</button>
+		<div>
+ 			Your Score is <span id="score" style="font-weight:600;">0</span>
+		</div>
+  		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  		<script  src="js/index.js"></script>
+	</div>
 	
 	<section id="part1">
 		<a name="part1" href=""></a>
@@ -162,7 +160,6 @@
     </label>
 </div>
 	</section>
-	
 	
 	<section id="part2">
 		<a name="part2" href=""></a>
@@ -309,9 +306,7 @@
     Answer C
     </label>
 </div>
-
 	</section>
-	
 	
 	<script>
 	const scrollTo = ele => {
