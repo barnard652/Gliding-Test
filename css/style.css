@@ -12,15 +12,30 @@ body {
   	height:1000em;
   	font-family: 'Ubuntu', sans-serif;
 }
+header {
+	background: var(--hero-color);
+  	width: 90%;
+	padding: 2.5% 5% 2.5% 5%;
+	margin: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 600;
+	font-size: 16pt;
+	color: var(--light-text);
+}
 nav {
   	display: inline-block;
   	width: 25%;
   	position: fixed;
   	top: 0px;
   	height: 100%;
-  	overflow: hidden;
+  	overflow: scroll;
+	overflow-x: hidden;
   	background: var(--accent-color);
   	color: var(--accent-color-text);
+}
+		/* Hide scrollbar for Chrome, Safari and Opera */
+nav::-webkit-scrollbar {
+    display: none;
 }
 ul {
   	width: 95%;
@@ -149,19 +164,18 @@ button {
 .tooltip {
   	position: relative;
   	display: block;
-  	border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
-  	visibility: hidden;
-  	width: 220px;
-  	background-color: black;
+	display: none;
+  	width: 90%;
+  	background-color: var(--hero-color);
   	color: #fff;
   	text-align: center;
-	float: inherit;
   	border-radius: 6px;
-  	padding: 5px 10px;
+  	padding: 5%;
   	opacity: .9;
+	margin: 0px;
 
   /* Position the tooltip */
   	position:initial;
@@ -169,10 +183,9 @@ button {
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+	display: block;
 }
-		
-		
+
 		
 @media only screen and (max-width : 960px ){
 	section {
