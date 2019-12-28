@@ -125,11 +125,15 @@ label {
 	clone:
 }
 #submit {
-	width:90%;
+	width:20%;
 	background: var(--hero-color);
-	padding: 5%;
+	padding: 1% 2.5% 1% 2.5%;
 	color: var(--light-text);
 	line-height: 2em;
+	position: fixed;
+	bottom: 2em;
+	right: 0em;
+	float: right;
 }
 button {
   	background: var(--hero-color);
