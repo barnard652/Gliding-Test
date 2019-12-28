@@ -4,11 +4,221 @@
 <head>
   <meta charset="UTF-8">
   <title>BGC Pilot Quiz</title>
-  <link rel="stylesheet" href="css/style.css">
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
-  <script src="Tab-controller.js"></script>
-		
+
+	
 </head>
+	<style>
+:root {
+	--accent-color: #EEEEEE;
+	--accent-color-text: #707070;
+	--light-accent-color-text: #919191;
+	--hero-color: #6AC1E6;
+	--light-text: #FFFFFF;
+	}		
+
+body {
+  	width: 100%;
+  	margin:0px;
+  	height:1000em;
+  	font-family: 'Ubuntu', sans-serif;
+}
+header {
+	background: var(--hero-color);
+  	width: 90%;
+	padding: 2.5% 5% 2.5% 5%;
+	margin: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 600;
+	font-size: 16pt;
+	color: var(--light-text);
+}
+nav {
+  	display: inline-block;
+  	width: 25%;
+  	position: fixed;
+  	top: 0px;
+  	height: 100%;
+  	overflow: scroll;
+	overflow-x: hidden;
+  	background: var(--accent-color);
+  	color: var(--accent-color-text);
+}
+		/* Hide scrollbar for Chrome, Safari and Opera */
+nav::-webkit-scrollbar {
+    display: none;
+}
+ul {
+  	width: 95%;
+	padding: 2.5%;
+	margin: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
+}
+li {
+  	display: block;
+  	color: var(--accent-color-text);
+  	width: 90%;
+  	padding: 5%;
+  	border-left: 2px solid #C7C7C7;
+  	transition: .2s
+}
+li:hover {
+  	background: #c7c7c7;
+  	border-left: 4px solid var(--light-accent-color-text);
+  	transition: .2s;
+
+}
+a {
+  	text-decoration: none;
+  	color: var(--accent-color-text);
+}
+li a {
+	color: ;
+	font-size: 10pt;	
+}
+p {
+	font-size: 12pt
+}
+h2, h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+h4, h5, h6{
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+section {
+  	display:block;
+  	font-size: 18px;
+  	width: 70%;
+  	padding: 2.5%;
+  	float: right;
+  	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+  	-moz-column-count: 3; /* Firefox */
+  	column-count: 3;
+}
+.text-section {
+	display:block;
+	font-size: 18px;
+  	width: 70%;
+  	padding: 2.5%;
+  	float: right;
+	color: var(--accent-color-text);
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+  	-moz-column-count: 1; /* Firefox */
+  	column-count: 1;
+		}
+.question {
+  	width: 90%;
+  	padding: 1% 5%;
+  	border: 2px solid var(--accent-color);
+  	color: var(--accent-color-text);
+  	margin-bottom: 1em;
+  	display: inline-block;
+  	line-height: 1.4em;
+}
+.Title {
+  	width: 90%;
+  	padding: 5%;
+  	padding-top: -100px; 
+  	border: 2px solid var(--hero-color);
+  	color: var(--light-text);
+  	background: var(--hero-color);
+  	margin-bottom: 1em;
+  	display: inline-block;
+  	line-height: 1.4em;
+}
+label {
+	display: inline-block;
+	width: 100%;
+	line-height: 2em;
+	clone:
+}
+#submit {
+	width:20%;
+	background: var(--hero-color);
+	padding: 1% 2.5% 1% 2.5%;
+	color: var(--light-text);
+	line-height: 2em;
+	position: fixed;
+	bottom: 2em;
+	right: 0em;
+	float: right;
+}
+button {
+  	background: var(--hero-color);
+  	border: 1px solid var(--light-text);
+  	font-family: 'Ubuntu', sans-serif;
+  	font-weight: 600;
+  	font-size: 15px;
+  	padding: 10px 20px;
+  	color: var(--light-text);
+}
+.quiz-msg {
+  	padding: 0.5em;
+  	margin-top: 1em;
+}
+.quiz-msg.correct {
+  	background: #e8ffc6;
+}
+.quiz-msg.incorrect {
+  	background: #ffe5cc;
+}
+
+.correct {
+	background: green;
+	padding: 0.2em;
+}
+
+
+
+
+/* - \/ Tool Tips pop up \/ - */
+
+.tooltip {
+  	position: relative;
+  	display: block;
+}
+
+.tooltip .tooltiptext {
+	display: none;
+  	width: 90%;
+  	background-color: var(--hero-color);
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 5%;
+  	opacity: .9;
+	margin: 0px;
+
+  /* Position the tooltip */
+  	position:initial;
+  	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	display: block;
+}
+
+		
+@media only screen and (max-width : 960px ){
+	section {
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+	}
+}
+@media only screen and (max-width : 650px ){
+	section {
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+	}
+}
+	</style>
+
 <body>
 
 	<nav>
