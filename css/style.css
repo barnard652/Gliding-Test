@@ -2,39 +2,46 @@ body {
   width: 100%;
   margin:0px;
   height:1000em;
+  font-family: 'Ubuntu', sans-serif;
 }
 nav {
   display: inline-block;
   width: 25%;
   position: fixed;
+  top: 0px;
   height: 100%;
   overflow: scroll;
-  background: #707070;
-  color: #FFFFFF;
+  background: #EEEEEE;
+  color: #707070;
 }
 ul {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
+  width: 95%;
+	padding: 2.5%;
+	margin: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
 }
 li {
   display: block;
-  color: #FFFFFF;
+  color: #707070;
   width: 90%;
   padding: 5%;
-  margin: 0px;
+  border-left: 2px solid #C7C7C7;
+  transition: .2s
 }
 li:hover {
-  display: block;
-  color: #000;
+  background: #c7c7c7;
+  border-left: 4px solid #919191;
+  transition: .2s;
+
+}
+a {
   text-decoration: none;
-  background: #3C98F5;
-  padding-left: 7%;
+  color: #707070;
 }
 section {
   display:block;
   font-size: 18px;
-  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
   width: 70%;
   padding: 2.5%;
   float: right;
@@ -53,10 +60,11 @@ section {
 }
 .Title {
   width: 90%;
-  padding: 1% 5%;
-  border: 2px solid #eee;
+  padding: 5%;
+  padding-top: -100px; 
+  border: 2px solid #6AC1E6;
   color: #FFFFFF;
-  background: #707070;
+  background: #6AC1E6;
   margin-bottom: 1em;
   display: inline-block;
   line-height: 1.4em;
@@ -64,16 +72,24 @@ section {
 label {
 	display: inline-block;
 	width: 100%;
-	line-height: 2em
+	line-height: 2em;
+	clone:
 }
 #submit {
 	width:90%;
-	background: #707070;
+	background: #6AC1E6;
 	padding: 5%;
 	color: #fff;
 	line-height: 2em;
-	position: sticky;
-	top: 5%;
+}
+button {
+  background: #6AC1E6;
+  border: 1px solid #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: #FFFFFF;
 }
 .quiz-msg {
   padding: 0.5em;
@@ -119,4 +135,14 @@ label {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+		
+		
+		
+@media only screen and (max-width: 600px) {
+	section {
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+	}
 }
