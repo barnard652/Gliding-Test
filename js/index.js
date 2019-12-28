@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  $('#quiz-submit').on('click', function(){
+  $('.quiz-submit').on('click', function(){
     //alert("yo");
     var score = 0;
     
