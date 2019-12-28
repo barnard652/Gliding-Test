@@ -1,73 +1,107 @@
+:root {
+	--accent-color: #EEEEEE;
+	--accent-color-text: #707070;
+	--light-accent-color-text: #919191;
+	--hero-color: #6AC1E6;
+	--light-text: #FFFFFF;
+	}		
+
 body {
-  width: 100%;
-  margin:0px;
-  height:1000em;
-  font-family: 'Ubuntu', sans-serif;
+  	width: 100%;
+  	margin:0px;
+  	height:1000em;
+  	font-family: 'Ubuntu', sans-serif;
 }
 nav {
-  display: inline-block;
-  width: 25%;
-  position: fixed;
-  top: 0px;
-  height: 100%;
-  overflow: hidden;
-  background: #EEEEEE;
-  color: #707070;
+  	display: inline-block;
+  	width: 25%;
+  	position: fixed;
+  	top: 0px;
+  	height: 100%;
+  	overflow: hidden;
+  	background: var(--accent-color);
+  	color: var(--accent-color-text);
 }
 ul {
-  width: 95%;
+  	width: 95%;
 	padding: 2.5%;
 	margin: 0px;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 100;
 }
 li {
-  display: block;
-  color: #707070;
-  width: 90%;
-  padding: 5%;
-  border-left: 2px solid #C7C7C7;
-  transition: .2s
+  	display: block;
+  	color: var(--accent-color-text);
+  	width: 90%;
+  	padding: 5%;
+  	border-left: 2px solid #C7C7C7;
+  	transition: .2s
 }
 li:hover {
-  background: #c7c7c7;
-  border-left: 4px solid #919191;
-  transition: .2s;
+  	background: #c7c7c7;
+  	border-left: 4px solid var(--light-accent-color-text);
+  	transition: .2s;
 
 }
 a {
-  text-decoration: none;
-  color: #707070;
+  	text-decoration: none;
+  	color: var(--accent-color-text);
+}
+li a {
+	color: ;
+	font-size: 10pt;	
+}
+p {
+	font-size: 12pt
+}
+h2, h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+h4, h5, h6{
+	margin-top: 5px;
+	margin-bottom: 0px;
 }
 section {
-  display:block;
-  font-size: 18px;
-  width: 70%;
-  padding: 2.5%;
-  float: right;
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
-  column-count: 3;
+  	display:block;
+  	font-size: 18px;
+  	width: 70%;
+  	padding: 2.5%;
+  	float: right;
+  	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+  	-moz-column-count: 3; /* Firefox */
+  	column-count: 3;
 }
+.text-section {
+	display:block;
+	font-size: 18px;
+  	width: 70%;
+  	padding: 2.5%;
+  	float: right;
+	color: var(--accent-color-text);
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+  	-moz-column-count: 1; /* Firefox */
+  	column-count: 1;
+		}
 .question {
-  width: 90%;
-  padding: 1% 5%;
-  border: 2px solid #eee;
-  color: #707070;
-  margin-bottom: 1em;
-  display: inline-block;
-  line-height: 1.4em;
+  	width: 90%;
+  	padding: 1% 5%;
+  	border: 2px solid var(--accent-color);
+  	color: var(--accent-color-text);
+  	margin-bottom: 1em;
+  	display: inline-block;
+  	line-height: 1.4em;
 }
 .Title {
-  width: 90%;
-  padding: 5%;
-  padding-top: -100px; 
-  border: 2px solid #6AC1E6;
-  color: #FFFFFF;
-  background: #6AC1E6;
-  margin-bottom: 1em;
-  display: inline-block;
-  line-height: 1.4em;
+  	width: 90%;
+  	padding: 5%;
+  	padding-top: -100px; 
+  	border: 2px solid var(--hero-color);
+  	color: var(--light-text);
+  	background: var(--hero-color);
+  	margin-bottom: 1em;
+  	display: inline-block;
+  	line-height: 1.4em;
 }
 label {
 	display: inline-block;
@@ -77,34 +111,34 @@ label {
 }
 #submit {
 	width:90%;
-	background: #6AC1E6;
+	background: var(--hero-color);
 	padding: 5%;
-	color: #fff;
+	color: var(--light-text);
 	line-height: 2em;
 }
 button {
-  background: #6AC1E6;
-  border: 1px solid #FFFFFF;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 10px 20px;
-  color: #FFFFFF;
+  	background: var(--hero-color);
+  	border: 1px solid var(--light-text);
+  	font-family: 'Ubuntu', sans-serif;
+  	font-weight: 600;
+  	font-size: 15px;
+  	padding: 10px 20px;
+  	color: var(--light-text);
 }
 .quiz-msg {
-  padding: 0.5em;
-  margin-top: 1em;
+  	padding: 0.5em;
+  	margin-top: 1em;
 }
 .quiz-msg.correct {
-  background: #e8ffc6;
+  	background: #e8ffc6;
 }
 .quiz-msg.incorrect {
-  background: #ffe5cc;
+  	background: #ffe5cc;
 }
 
 .correct {
-  background: green;
-  padding: 0.2em;
+	background: green;
+	padding: 0.2em;
 }
 
 
@@ -113,28 +147,29 @@ button {
 /* - \/ Tool Tips pop up \/ - */
 
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+  	position: relative;
+  	display: block;
+  	border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 220px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 10px;
-  opacity: .9;
+  	visibility: hidden;
+  	width: 220px;
+  	background-color: black;
+  	color: #fff;
+  	text-align: center;
+	float: inherit;
+  	border-radius: 6px;
+  	padding: 5px 10px;
+  	opacity: .9;
 
   /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
+  	position:initial;
+  	z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
-	visibility: visible;
+  visibility: visible;
 }
 		
 		
