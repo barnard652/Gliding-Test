@@ -1,32 +1,48 @@
-let mainNavLinks = document.querySelectorAll("nav ul li a");
-let mainSections = document.querySelectorAll("main section");
-
-let lastId;
-let cur = [];
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
-
-window.addEventListener("scroll", event => {
-  let fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
-
-    if (
-      section.offsetTop <= fromTop &&
-      section.offsetTop + section.offsetHeight > fromTop
-    ) {
-      link.classList.add("current");
-    } else {
-      link.classList.remove("current");
-    }
-  });
+//MENU SCROLL
+$(".menu a").click(function() {
+	//on click, we get the target value of the selected element
+	var target = $(this).attr('target');
+	//we then scroll our body until the top of the corresponding div in 700ms
+	var mh=$('.menu').height();
+	$('body').animate({scrollTop: $("#" + target).offset().top-mh}, 700);
 });
 
+//SCROLLSPY								 
+function scrollSpy(){
+	var mh=$('.menu').height();
+	$('#landing').css("padding-top",mh+"px");
+	
+	$(".menu a").removeClass("active"); //we remove active from every menu element
+
+	//we get the divs offsets looping the menu links and getting the targets (this is dynamic: when we change div #suzy's height, code won't break!)
+	var divs = [];
+	$(".menu a").each(function(i) {
+		var appo = $(this).attr("target");
+		//here we get the distance from top of each div
+		divs[i] = $("#" + appo).offset().top;
+	});
+
+	//gets actual scroll and adds window height/2 to change the active menu voice when the lower div reaches half of screen (it can be changed)
+	var pos = $(window).scrollTop();
+	var off = ($(window).height()) / 2;
+
+	pos = pos + off;
+
+	//we parse our "div distances from top" object (divs) until we find a div which is further from top than the actual scroll position(+ of course window height/2). When we find it, we assign "active" class to the Nth menu voice which is corresponding to the last div closer to the top than the actual scroll -> trick is looping from index=0 while Nth css numeration starts from 1, so when the index=3 (fourth div) breaks our cycly, we give active to the third element in menu.
+	var index = 0;
+
+	for (index = 0; index < divs.length; index++) {
+		if (pos < divs[index]) {
+			break;
+		}
+	}
+	index--;
+	$(".menu li:eq(" + index + ") a").addClass("active");
+};
+
+$(window).scroll(function() {
+	scrollSpy();
+});
+$(document).ready(function() {
+	scrollSpy();
+});
