@@ -124,7 +124,7 @@ label {
 	line-height: 2em;
 	clone:
 }
-.submit {
+#submit {
 	width:20%;
 	background: var(--hero-color);
 	padding: 1% 2.5% 1% 2.5%;
