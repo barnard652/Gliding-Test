@@ -86,6 +86,9 @@ section {
   	-webkit-column-count: 3; /* Chrome, Safari, Opera */
   	-moz-column-count: 3; /* Firefox */
   	column-count: 3;
+	margin-top: 1em;
+	border-top: 1px solid var(--accent-color);
+}
 }
 .text-section {
 	display:block;
