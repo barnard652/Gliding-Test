@@ -89,13 +89,7 @@ section {
 	margin-top: 1em;
 	border-top: 1px solid var(--accent-color);
 }
-}
-.text-section {
-	display:block;
-	font-size: 18px;
-  	width: 70%;
-  	padding: 2.5%;
-  	float: right;
+section .text-section {
 	color: var(--accent-color-text);
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
   	-moz-column-count: 1; /* Firefox */
@@ -224,7 +218,13 @@ button {
 		bottom: 0em;
 		text-align: center;
 		display: inline;
-}
+	}
+	section .text-section {
+		width: 95%;
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
+	}
 }
 @media only screen and (max-width : 650px ){
 	section {
@@ -233,8 +233,11 @@ button {
 		column-count: 1;
 		width: 95%;
 	}
-	.text-section {
+	section .text-section {
 		width: 95%;
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+		-moz-column-count: 1; /* Firefox */
+		column-count: 1;
 	}
 	#submit {
 		width:95%;
