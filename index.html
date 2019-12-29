@@ -14,6 +14,8 @@
 
 	<nav class="menu">
 		<header>Buckminster Pilot Test</header>
+		<div class="progress-container">
+    		<div class="progress-bar" id="myBar"></div>
 		<ul>
 			<li><a href="#section-1">Air Law</a></li>
 			<li><a href="#section-2">Airmanship</a></li>
@@ -309,14 +311,17 @@
 </div>
 	</section>
 	
-	<script>
-	const scrollTo = ele => {
-  ele.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-};
-	</script>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 
 </body>
 </html>
