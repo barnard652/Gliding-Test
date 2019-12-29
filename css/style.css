@@ -219,12 +219,6 @@ button {
 		text-align: center;
 		display: inline;
 	}
-	.text-section {
-		width: 95%;
-		-webkit-column-count: 1; /* Chrome, Safari, Opera */
-		-moz-column-count: 1; /* Firefox */
-		column-count: 1;
-	}
 }
 @media only screen and (max-width : 650px ){
 	section {
