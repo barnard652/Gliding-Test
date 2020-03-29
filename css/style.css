@@ -184,6 +184,7 @@ button {
   	position: relative;
   	display: block;
 	text-align:center;
+	border-top: var(--accent-color) 2px solid;
 }
 
 .tooltip .tooltiptext {
