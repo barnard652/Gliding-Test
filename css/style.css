@@ -185,6 +185,8 @@ button {
   	display: block;
 	text-align:center;
 	border-top: var(--accent-color) 2px solid;
+	margin-top: 10px;
+	padding: 5px;
 }
 
 .tooltip .tooltiptext {
@@ -206,6 +208,8 @@ button {
 .tooltip:hover .tooltiptext {
 	display: block;
 }
+
+/* - /\ Tool Tips pop up /\ - */
 
 		
 @media only screen and (max-width : 960px ){
