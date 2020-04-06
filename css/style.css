@@ -1,16 +1,26 @@
-:root {
-	--accent-color: #EEEEEE;
+	.theme-light {
+    	--accent-color: #EEEEEE;
 	--accent-color-text: #707070;
 	--light-accent-color-text: #919191;
 	--hero-color: #6AC1E6;
-	--light-text: #FFFFFF;
-	}		
+	--font: #FFFFFF;
+}
+
+  .theme-dark {
+  	--background: #243133;
+    --accent-color: #314144;
+	--accent-color-text: #989898;
+	--light-accent-color-text: #17edab;
+	--hero-color: #17ed90;
+	--font: #FFFFFF;
+}	
 
 body {
   	width: 100%;
   	margin:0px;
   	height:auto;
   	font-family: 'Ubuntu', sans-serif;
+  	background-color: var(--background)
 }
 header {
 	background: var(--hero-color);
@@ -20,7 +30,7 @@ header {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 600;
 	font-size: 16pt;
-	color: var(--light-text);
+	color: var(--font);
 }
 nav {
   	display: inline-block;
@@ -31,7 +41,7 @@ nav {
   	overflow: scroll;
 	overflow-x: hidden;
   	background: var(--accent-color);
-  	color: var(--accent-color-text);
+  	color: var(--font);
 }
 		/* Hide scrollbar for Chrome, Safari and Opera */
 nav::-webkit-scrollbar {
@@ -49,11 +59,11 @@ li {
   	color: var(--accent-color-text);
   	width: 90%;
   	padding: 5%;
-  	border-left: 2px solid #C7C7C7;
+  	border-left: 2px solid var(--hero-color);
   	transition: .2s
 }
 li:hover {
-  	background: #c7c7c7;
+  	background: var(--background);
   	border-left: 4px solid var(--light-accent-color-text);
   	transition: .2s;
 
@@ -67,7 +77,8 @@ li a {
 	font-size: 10pt;	
 }
 a .Title:hover {
-	background-color: #5fb1d4;	
+	background-color: var(--light-text);
+	color: var(--hero-color)	
 }
 p {
 	font-size: 12pt
@@ -114,7 +125,7 @@ section {
   	padding: 5%;
   	padding-top: -100px; 
   	border: 2px solid var(--hero-color);
-  	color: var(--light-text);
+  	color: var(--font);
   	background: var(--hero-color);
   	margin-bottom: 1em;
   	display: inline-block;
