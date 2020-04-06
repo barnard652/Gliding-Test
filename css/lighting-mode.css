@@ -5,22 +5,24 @@ html, body {
     width: 100%;
   }
   .theme-light {
-    --color-primary: #0060df;
-    --color-secondary: #fbfbfe;
-    --color-accent: #fd6f53;
-    --font-color: #000000;
+    --accent-color: #EEEEEE;
+	--accent-color-text: #707070;
+	--light-accent-color-text: #919191;
+	--hero-color: #6AC1E6;
+	--light-text: #FFFFFF;
   }
   .theme-dark {
-    --color-primary: #17ed90;
-    --color-secondary: #243133;
-    --color-accent: #12cdea;
-    --font-color: #ffffff;
+    --accent-color: #243133;
+	--accent-color-text: #FFFFFF;
+	--light-accent-color-text: #12cdea;
+	--hero-color: #17ed90;
+	--light-text: #FFFFFF;
   }
   .container {
     display: flex;
     width: 100%;
     height: 100%;
-    background: var(--color-secondary);
+    background: var(--hero-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
