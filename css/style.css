@@ -3,7 +3,7 @@
 	--accent-color-text: #707070;
 	--light-accent-color-text: #919191;
 	--hero-color: #6AC1E6;
-	--font: #FFFFFF;
+	--font: #919191;
 	--correct: #e8ffc6;
 	--incorrect: #ffe5cc;
 }
@@ -145,21 +145,22 @@ label {
 	width:20%;
 	background: var(--hero-color);
 	padding: 1% 2.5% 1% 2.5%;
-	color: var(--light-text);
+	color: var(--font);
 	line-height: 2em;
 	position: fixed;
 	bottom: 2em;
 	right: 0em;
 	float: right;
+	z-index: 999;
 }
 button {
   	background: var(--hero-color);
-  	border: 1px solid var(--light-text);
+  	border: 1px solid var(--font);
   	font-family: 'Ubuntu', sans-serif;
   	font-weight: 600;
   	font-size: 15px;
   	padding: 10px 20px;
-  	color: var(--light-text);
+  	color: var(--font);
 }
 .quiz-msg {
   	padding: 0.5em;
@@ -174,11 +175,6 @@ button {
 	text-align:center;
   	background: var(--incorrect);
 	color: var(--font);
-}
-
-.correct {
-	background: green;
-	padding: 0.2em;
 }
 
 /* - \/ Scroll progression bar \/ - */
