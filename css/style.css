@@ -1,18 +1,22 @@
-	.theme-light {
+  .theme-light {
     	--accent-color: #EEEEEE;
 	--accent-color-text: #707070;
 	--light-accent-color-text: #919191;
 	--hero-color: #6AC1E6;
 	--font: #FFFFFF;
+	--correct: #e8ffc6;
+	--incorrect: #ffe5cc;
 }
 
   .theme-dark {
   	--background: #243133;
-    --accent-color: #314144;
+    	--accent-color: #314144;
 	--accent-color-text: #989898;
 	--light-accent-color-text: #919191;
 	--hero-color: #6AC1E6;
 	--font: #FFFFFF;
+	--correct: #26f05f;
+	--incorrect: #f07326;
 }	
 
 body {
@@ -162,10 +166,12 @@ button {
   	margin-top: 1em;
 }
 .quiz-msg.correct {
-  	background: #e8ffc6;
+  	background: var-(--correct);
+	color: var-(--font);
 }
 .quiz-msg.incorrect {
-  	background: #ffe5cc;
+  	background: var-(--incorrect);
+	color: var-(--font);
 }
 
 .correct {
