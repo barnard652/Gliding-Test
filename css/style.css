@@ -166,12 +166,14 @@ button {
   	margin-top: 1em;
 }
 .quiz-msg.correct {
-  	background: var-(--correct);
-	color: var-(--font);
+	text-align:center;
+  	background: var(--correct);
+	color: var(--font);
 }
 .quiz-msg.incorrect {
-  	background: var-(--incorrect);
-	color: var-(--font);
+	text-align:center;
+  	background: var(--incorrect);
+	color: var(--font);
 }
 
 .correct {
