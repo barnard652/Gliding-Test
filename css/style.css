@@ -1,4 +1,5 @@
   .theme-light {
+	--background: #FAFAFA;
     	--accent-color: #EEEEEE;
 	--accent-color-text: #707070;
 	--light-accent-color-text: #919191;
@@ -73,7 +74,7 @@ li {
 }
 li:hover {
   	background: var(--background);
-  	border-left: 4px solid var(--light-accent-color-text);
+  	border-left: 4px solid var(--hero-color);
   	transition: .2s;
 
 }
