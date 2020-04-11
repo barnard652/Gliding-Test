@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airspace for gliders</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+  <script src="js/nav-highlighter.js"></script>
+  <script src="js/lighting-mode.js"></script>
+	
+</head>
+
+<body>
+
+	<nav class="menu">
+		<header>Buckminster Pilot Test</header>
+		<div class="progress-container">
+    		<div class="progress-bar" id="myBar"></div>
+		<ul>
+			<li><a href="#section-1">Class A</a></li>
+			<li><a href="#section-2">Class C</a></li>
+			<li><a href="#section-3">Class D</a></li>
+			<li><a href="#section-4">Class E</a></li>
+		</ul>
+	</nav>
+	<section class="text-section">
+		<h1>Airspace for glider pilots
+			<a href="index" class="back-arrow">&#8617;</a>
+			<label class="switch" style="float:right; margin-left:10px;">
+  				<input type="checkbox" onclick="toggleTheme()">
+  				<span class="slider round"></span>
+			</label>
+		</h1>
+		<p>Proin vestibulum nibh ut ultrices sagittis. Pellentesque pulvinar felis nibh, a tincidunt justo congue ut. Nunc facilisis laoreet enim quis tincidunt. Aliquam orci felis, iaculis a congue quis, scelerisque sed dolor. Aenean quis sollicitudin eros. Donec a quam enim. Donec non sapien eu nisl vehicula vulputate. In euismod at augue ut elementum. Proin a venenatis ante, at finibus nisi. Vestibulum faucibus lectus et justo pulvinar, et tristique tellus ornare. In fringilla lacus a enim rhoncus efficitur. Phasellus eleifend luctus gravida. Mauris sed gravida metus.</p>
+	</section>
+	
+	
+	<div id="submit"><button class="quiz-submit">Submit</button>
+			<div>
+ 				Your Score is <span id="score" style="font-weight:600;">0</span>
+			</div>
+  			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  			<script  src="js/index.js"></script>
+		</div>
+		
+<!-- PART ONE Q -->
+		
+	<section id="section-1">
+		<a name="section-1" href=""></a>
+	<div class="Title"><h3>Class A</h3><h6>Gliding Restrictions</h6></div>
+		<div class="question">
+  <h4>1. Can you enter Class A airspace</h4>
+  <label>
+    <input type="radio" name="answers[1]" value="A" >
+    Yes
+  </label>
+  <label>
+    <input type="radio" name="answers[1]" value="B">
+    No
+  </label>
+  <label>
+    <input type="radio" name="answers[1]" value="C"data-correct>
+    If brifed on specific agreement
+    </label>
+			<!-- Tool Tips Div START -->
+<div class="tooltip">Expand
+  <span class="tooltiptext">Unless the club you are flying at has an agreedment to fly in the air space and you are brifed on it you MUST NOT fly in Class A airspace</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+		<div class="question">
+  <h4>2. What is userely in Class A airspace</h4>
+  <label>
+    <input type="radio" name="answers[2]" value="A">
+    RAF and Military
+  </label>
+  <label>
+    <input type="radio" name="answers[2]" value="B" data-correct>
+    Airports and Airways 
+  </label>
+  <label>
+    <input type="radio" name="answers[2]" value="C">
+    skydiving drop zones 
+    </label>
+	<!-- Tool Tips Div START -->
+<div class="tooltip">Expand
+  <span class="tooltiptext">The majority of airways such as London Control Zone (London CTR, i.e. Heathrow)</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+		<div class="question">
+  <h4>3. Some Class A airspace are TMZ, what does this stand for?</h4>
+  <label>
+    <input type="radio" name="answers[3]" value="A">
+    Traffic Moving Zone
+  </label>
+	
+  <label>
+    <input type="radio" name="answers[3]" value="B" data-correct>
+    Terminal Manoeuvring Zone
+  </label>
+  <label>
+    <input type="radio" name="answers[3]" value="C">
+    Today Measuring Zone
+    </label>
+</div>
+	
+		<div class="question">
+  <h4>4. NA</h4>
+  <label>
+    <input type="radio" name="answers[4]" value="A">
+    Answer A
+  </label>
+  <label>
+    <input type="radio" name="answers[4]" value="B" data-correct>
+    Answer B
+  </label>
+  <label>
+    <input type="radio" name="answers[4]" value="C" data-correct>
+    Answer C
+    </label>
+</div>
+	
+	</section>
+		
+<!-- PART TWO Q -->
+		
+	<section id="section-2">
+		<a name="section-2" href=""></a>
+	<div class="Title"><h3>Class C</h3><h6>Gliding Restrictions</h6></div>
+		
+					<div class="question">
+  <h4>1. Can you enter Class C airspace</h4>
+  <label>
+    <input type="radio" name="answers[5]" value="A">
+    Yes
+  </label>
+  <label>
+    <input type="radio" name="answers[5]" value="B">
+    No
+  </label>
+  <label>
+    <input type="radio" name="answers[5]" value="C" data-correct>
+    Yes with restitions
+    </label>
+</div>
+		
+	<div class="question">
+  <h4>2. Where is Class C airspace</h4>
+  <label>
+    <input type="radio" name="answers[6]" value="A">
+    Airdoms and Air Ports
+  </label>
+  <label>
+    <input type="radio" name="answers[6]" value="B" data-correct>
+    All air space above FL195
+  </label>
+  <label>
+    <input type="radio" name="answers[6]" value="C" >
+    All air space above FL10
+    </label>
+		<!-- Tool Tips Div START -->
+<div class="tooltip">Help?
+  <span class="tooltiptext">All air space above FL195 (19500 Feet*) is class C air space with some agrements to be opened to gliders if reqreasted by clubs</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+	<div class="question">
+  <h4>3. Do glider need transponders to fly in class C air space</h4>
+  <label>
+    <input type="radio" name="answers[7]" value="A">
+    Yes
+  </label>
+  <label>
+    <input type="radio" name="answers[7]" value="B">
+    No
+  </label>
+  <label>
+    <input type="radio" name="answers[7]" value="C" data-correct>
+    Maybe
+    </label>
+		<!-- Tool Tips Div START -->
+<div class="tooltip">Help?
+  <span class="tooltiptext">Gliders are allowed to fly without a transponder in designated gliding areas</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+	<div class="question">
+  <h4>4. You must follow the rules of </h4>
+  <label>
+    <input type="radio" name="answers[8]" value="A" data-correct>
+    VMC (Visual Meteorological Conditions)
+  </label>
+  <label>
+    <input type="radio" name="answers[8]" value="B">
+    VFR (Visual Flight Rules)
+  </label>
+  <label>
+    <input type="radio" name="answers[8]" value="C">
+    IFR (Insterment Flight Rules)
+    </label>
+	<!-- Tool Tips Div START -->
+<div class="tooltip">Help?
+  <span class="tooltiptext">You must be clear form clouds (1500 Meters horizontally and 1000 Feet vertically form cloud) and in flight visibility of 8 Km</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+	</section>
+		
+<!-- PART THREE Q -->
+		
+	<section id="section-3">
+		<a name="section-3" href=""></a>
+	<div class="Title"><h3>Class D</h3><h6>Gliding Restrictions</h6></div>
+		<div class="question">
+  <h4>1. Can you enter Class D airspace</h4>
+  <label>
+    <input type="radio" name="answers[9]" value="A" data-correct>
+    Yes
+  </label>
+  <label>
+    <input type="radio" name="answers[9]" value="B">
+    No
+  </label>
+  <label>
+    <input type="radio" name="answers[9]" value="C">
+    Yes with restitons
+    </label>
+			<!-- Tool Tips Div START -->
+<div class="tooltip">Exspand
+  <span class="tooltiptext">Yes but only with clearance and you should spend the least amout of times in there</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+		<div class="question">
+  <h4>2. What restictions are there when flying in Class D airspace</h4>
+  <label>
+    <input type="radio" name="answers[10]" value="A" data-correct>
+   VMC (Visual Meteorological Conditions)
+  </label>
+  <label>
+    <input type="radio" name="answers[10]" value="B" >
+    VFR (Visual Flight Rules)
+  </label>
+  <label>
+    <input type="radio" name="answers[10]" value="C">
+    TIFR (Insterment Flight Rules)
+    </label>
+			<!-- Tool Tips Div START -->
+<div class="tooltip">Exspand
+  <span class="tooltiptext">You must at / above 3000ft, clear of clouds (1500 Meters horizontally and 1000 Feet vertically form cloud) and in flight visibility of 5 Km</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+		<div class="question">
+  <h4>3. Who do you need clearance from to enter Class D airspace? </h4>
+  <label>
+    <input type="radio" name="answers[11]" value="A">
+    CAS(T) (Temporary Controlled Airspace)
+  </label>
+  <label>
+    <input type="radio" name="answers[11]" value="B" data-correct>
+    ATC (Air traffic Control)
+  </label>
+  <label>
+    <input type="radio" name="answers[11]" value="C">
+    MTZ (Military Trffic Zone)  
+    </label>
+			<!-- Tool Tips Div START -->
+<div class="tooltip">Exspand
+  <span class="tooltiptext">Contact the ATC unit and pass details of the aircraft’s position, level and proposed track</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+
+		<div class="question">
+  <h4>4. Which of these IS'NT a reason to fly into Class D airspace</h4>
+  <label>
+    <input type="radio" name="answers[12]" value="A">
+    If you dont get clearent 
+  </label>
+  <label>
+    <input type="radio" name="answers[12]" value="B" data-correct>
+    If you might land out
+  </label>
+  <label>
+    <input type="radio" name="answers[12]" value="C">
+    If it a TCA (Temporary Controlled Airspace)
+    </label>
+	<!-- Tool Tips Div START -->
+<div class="tooltip">Help?
+  <span class="tooltiptext">You CAN NOT fly into Class D airspace without clearent from the ATC or if the airspace is a CAS(T)</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+	
+	</section>
+		
+<!-- PART FOUR Q -->	
+		
+	<section id="section-4">
+		<a name="section-4" href=""></a>
+	<div class="Title"><h3>Class E</h3><h6>Gliding Restrictions</h6></div>
+		
+		<div class="question">
+  <h4>1. Can you enter Class E airspace</h4>
+  <label>
+    <input type="radio" name="answers[13]" value="A" data-correct>
+    Yes
+  </label>
+  <label>
+    <input type="radio" name="answers[13]" value="B">
+    No
+  </label>
+  <label>
+    <input type="radio" name="answers[13]" value="C">
+     Yes with restitions
+    </label>
+</div>
+		<div class="question">
+  <h4>2. Can you fly in Class E airspace without a Transponder</h4>
+  <label>
+    <input type="radio" name="answers[14]" value="A" data-correct>
+    Yes
+  </label>
+  <label>
+    <input type="radio" name="answers[14]" value="B">
+    No
+  </label>
+  <label>
+    <input type="radio" name="answers[14]" value="C">
+     Only if it an old glider
+    </label>
+			<!-- Tool Tips Div START -->
+<div class="tooltip">Exspand
+  <span class="tooltiptext">Any aircraft including gliders may fly in this airspace observing VFR, without Air Traffic Control clearance.</span>
+</div>
+	<!-- Tool Tips Div END -->
+</div>
+		
+	<div class="question">
+  <h4>3. NA</h4>
+  <label>
+    <input type="radio" name="answers[15]" value="A">
+    Answer A
+  </label>
+  <label>
+    <input type="radio" name="answers[15]" value="B">
+    Answer B
+  </label>
+  <label>
+    <input type="radio" name="answers[15]" value="C" data-correct>
+     Answer C
+    </label>
+</div>
+		<div class="question">
+  <h4>4. NA</h4>
+  <label>
+    <input type="radio" name="answers[16]" value="A">
+    Answer A
+  </label>
+  <label>
+    <input type="radio" name="answers[16]" value="B">
+    Answer B
+  </label>
+  <label>
+    <input type="radio" name="answers[16]" value="C" data-correct>
+     Answer C
+    </label>
+</div>
+		
+	</section>
+		
+</body>
+</html>
