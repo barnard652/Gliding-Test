@@ -90,6 +90,11 @@ a .Title:hover {
 	background-color: var(--light-text);
 	color: var(--hero-color)	
 }
+a .back-arrow {
+}
+a .back-arrow:hover {
+	color: var(--hero-color);
+}
 p {
 	font-size: 12pt
 }
