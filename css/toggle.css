@@ -36,8 +36,7 @@
 }
 
 input:checked + .slider {
-  background-color: var(--background);
-  border: var(--hero-color);
+  background-color: var(--hero-color);
 }
 
 input:focus + .slider {
