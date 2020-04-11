@@ -118,6 +118,12 @@ section {
 	margin-top: 1em;
 	border-top: 1px solid var(--accent-color);
 }
+footer {
+    	height: 10em;
+    	display: inline-block;
+    	width: 100%;
+	background: var(--accent-color);
+}
 .text-section {
 	color: var(--accent-color-text);
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
