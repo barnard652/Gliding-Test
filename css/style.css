@@ -31,7 +31,7 @@ body {
 }
 ::selection {
 	background-color: var(--hero-color);
-	color:var(--light-accent-color-text);
+	color:var(--font);
 }
 header {
 	background: var(--hero-color);
