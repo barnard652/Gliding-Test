@@ -30,7 +30,7 @@ body {
 	transition-timing-function: ease-in-out;
 }
 ::selection {
-	backgound-color: var(--hero-color);
+	background-color: var(--hero-color);
 	color:var(--light-accent-color-text);
 }
 header {
