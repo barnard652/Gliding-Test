@@ -29,6 +29,10 @@ body {
 	transition-duration: 0.4s;
 	transition-timing-function: ease-in-out;
 }
+::selection {
+	backgound-color:var(--hero-color);
+	color:var(--light-accent-color-text);
+}
 header {
 	background: var(--hero-color);
   	width: 90%;
