@@ -70,12 +70,12 @@ li {
   	color: var(--accent-color-text);
   	width: 90%;
   	padding: 5%;
-  	border-left: 2px solid var(--hero-color);
+  	border-left: 4px solid var(--hero-color);
   	transition: .2s
 }
 li:hover {
   	background: var(--background);
-  	border-left: 4px solid var(--hero-color);
+  	border-left: 6px solid var(--hero-color);
   	transition: .2s;
 
 }
