@@ -244,6 +244,13 @@ button {
 
 /* - /\ Tool Tips pop up /\ - */
 
+.symbol {
+	background-color: var(--font);
+}
+.symbol-bold {
+	background-color: var(--hero-color);
+}
+
 /* - \/ Toggle Swicth \/ - */
 .switch {
   position: relative;
