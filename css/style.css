@@ -247,8 +247,12 @@ button {
 .symbol {
 	fill: var(--font);
 }
-.symbol-bold {
+.symbols-large {
 	fill: var(--hero-color);
+	width: 70%;
+	padding: 15%;
+}
+svg {
 }
 
 /* - \/ Toggle Swicth \/ - */
