@@ -245,10 +245,10 @@ button {
 /* - /\ Tool Tips pop up /\ - */
 
 .symbol {
-	background-color: var(--font);
+	fill: var(--font);
 }
 .symbol-bold {
-	background-color: var(--hero-color);
+	fill: var(--hero-color);
 }
 
 /* - \/ Toggle Swicth \/ - */
