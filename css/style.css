@@ -24,7 +24,7 @@ body {
   	width: 100%;
   	margin:0px;
   	height:auto;
-  	font-family: 'Titillium Web', sans-serif;
+  	font-family: 'Titillium Web', Ubuntu, sans-serif;
   	background-color: var(--background);
 	transition-duration: 0.4s;
 	transition-timing-function: ease-in-out;
@@ -38,7 +38,7 @@ header {
   	width: 90%;
 	padding: 2.5% 5% 2.5% 5%;
 	margin: 0px;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', Ubuntu, sans-serif;
 	font-weight: 600;
 	font-size: 16pt;
 	color: var(--font);
@@ -178,7 +178,7 @@ input {
 button {
   	background: var(--hero-color);
   	border: 1px solid var(--font);
-  	font-family: 'Titillium Web', sans-serif;
+  	font-family: 'Titillium Web', Ubuntu, sans-serif;
   	font-weight: 600;
   	font-size: 15px;
   	padding: 10px 20px;
