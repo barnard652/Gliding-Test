@@ -271,8 +271,10 @@ button {
 }
 .symbols-large {
 	fill: var(--hero-color);
-	width: 70%;
-	padding: 15%;
+	width: 80%;
+	padding: 5% 10% 5% 10%;
+	background: var(--hero-color);
+	margin: 0.7em 0em 0em 0em;
 }
 svg {
 }
