@@ -29,7 +29,6 @@ body {
 	transition-duration: 0.4s;
 	transition-timing-function: ease-in-out;
 	counter-reset: counter;
-	counter-reset: counter-li;
 }
 ::selection {
 	background-color: var(--hero-color);
@@ -66,6 +65,7 @@ ul {
 	padding: 0px;
 	margin: 0px;
 	font-weight: 100;
+	counter-reset: counter-li;
 }
 li {
   	display: block;
@@ -81,14 +81,14 @@ li:hover {
   	transition: .2s;
 
 }
-/*	\/ auto added the part to ul, li \/	*/
+/*	\/ auto added the "part(var)." to li from counter in ul \/	*/
 li::before {
 	counter-increment: counter-li;
 	content: "Part " counter(counter-li) ". ";
 	font-weight: 500;
 	font-size: 13px;
 }
-/*	/\ auto added the part to .Title /\	*/
+/*	/\ auto added the "part(var)." to li from counter in ul /\	*/
 a {
   	text-decoration: none;
   	color: var(--accent-color-text);
@@ -164,12 +164,12 @@ footer {
   	line-height: 1.4em;
 }
 
-/*	\/ auto added the part to .Title \/	*/
+/*	\/ auto added the "part(var)." to h3 in .Title from counter in body \/	*/
 h3::before {
 	counter-increment: counter;
 	content: "Part " counter(counter) ". ";
 }
-/*	/\ auto added the part to .Title /\	*/
+/*	/\ auto added the "part(var)." to h3 in .Title from counter in body /\	*/
 
 label {
 	display: inline-block;
