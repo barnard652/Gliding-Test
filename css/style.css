@@ -1,4 +1,4 @@
-  .theme-light {
+ .theme-light {
 	--background: #FAFAFA;
     	--accent-color: #EEEEEE;
 	--accent-color-text: #707070;
@@ -185,9 +185,8 @@ button {
   	color: var(--font);
 }
 .quiz-msg {
-  	padding: 0.3em;
-	margin-top: .3em;
-	margin-bottom: .4em;
+  	padding: 0.5em;
+  	margin-top: 1em;
 }
 .quiz-msg.correct {
 	text-align:center;
@@ -253,17 +252,19 @@ button {
 	fill: var(--font);
 }
 .symbols-large {
-	width: 80%;
-	padding: 10%;
+	fill: var(--hero-color);
+	width: 70%;
+	padding: 15%;
+}
 svg {
 }
 
 /* - \/ Toggle Swicth \/ - */
 .switch {
-	position: relative;
-	display: inline-block;
-	width: 70px;
-	height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
 	padding:0px;
 }
 
