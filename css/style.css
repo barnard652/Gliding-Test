@@ -152,11 +152,6 @@ footer {
   	margin-bottom: 1em;
   	display: inline-block;
   	line-height: 1.4em;
-	counter-reset: counter;
-}
-h3::before {
-	counter-increment: counter;
-	content: "Part " counter(counter) "| ";
 }
 label {
 	display: inline-block;
@@ -260,17 +255,15 @@ button {
 .symbols-large {
 	width: 80%;
 	padding: 10%;
-	margin: 5% 0% -2% 0%;
-	background: var(--hero-color);
 svg {
 }
 
 /* - \/ Toggle Swicth \/ - */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 70px;
-  height: 34px;
+	position: relative;
+	display: inline-block;
+	width: 70px;
+	height: 34px;
 	padding:0px;
 }
 
