@@ -28,6 +28,8 @@ body {
   	background-color: var(--background);
 	transition-duration: 0.4s;
 	transition-timing-function: ease-in-out;
+	counter-reset: counter;
+	counter-reset: counter-li;
 }
 ::selection {
 	background-color: var(--hero-color);
@@ -79,6 +81,14 @@ li:hover {
   	transition: .2s;
 
 }
+/*	\/ auto added the part to ul, li \/	*/
+li::before {
+	counter-increment: counter-li;
+	content: "Part " counter(counter-li) ". ";
+	font-weight: 500;
+	font-size: 13px;
+}
+/*	/\ auto added the part to .Title /\	*/
 a {
   	text-decoration: none;
   	color: var(--accent-color-text);
@@ -153,6 +163,14 @@ footer {
   	display: inline-block;
   	line-height: 1.4em;
 }
+
+/*	\/ auto added the part to .Title \/	*/
+h3::before {
+	counter-increment: counter;
+	content: "Part " counter(counter) ". ";
+}
+/*	/\ auto added the part to .Title /\	*/
+
 label {
 	display: inline-block;
 	width: 85%;
