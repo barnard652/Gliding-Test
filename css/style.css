@@ -152,6 +152,11 @@ footer {
   	margin-bottom: 1em;
   	display: inline-block;
   	line-height: 1.4em;
+	counter-reset: counter;
+}
+h3::before {
+	counter-increment: counter;
+	content: "Part " counter(counter) "| ";
 }
 label {
 	display: inline-block;
@@ -185,8 +190,9 @@ button {
   	color: var(--font);
 }
 .quiz-msg {
-  	padding: 0.5em;
-  	margin-top: 1em;
+  	padding: 0.3em;
+	margin-top: .3em;
+	margin-bottom: .4em;
 }
 .quiz-msg.correct {
 	text-align:center;
@@ -252,10 +258,10 @@ button {
 	fill: var(--font);
 }
 .symbols-large {
-	fill: var(--hero-color);
-	width: 70%;
-	padding: 15%;
-}
+	width: 80%;
+	padding: 10%;
+	margin: 5% 0% -2% 0%;
+	background: var(--hero-color);
 svg {
 }
 
